@@ -13,7 +13,7 @@ const Content: React.FC<{
   if (!props.open.value) {
     return null;
   }
-  return <div>Your random number is: {randomNumber}</div>;
+  return <div className="contentText">Your random number is: {randomNumber}</div>;
 };
 
 const MainPage: React.FC = () => {

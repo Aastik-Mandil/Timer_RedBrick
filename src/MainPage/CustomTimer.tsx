@@ -1,4 +1,5 @@
 import React from "react";
+import "./CustomTimer.css";
 
 const startTime = Date.now();
 function useGetTimer() {
@@ -23,7 +24,7 @@ function CustomTimer() {
   const time = useGetTimer();
 
   return (
-    <div>
+    <div className="customTimerContent">
       The page loaded {(Number(time) / 1000).toFixed(1)}{" "}
       seconds ago
     </div>
